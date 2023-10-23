@@ -6,7 +6,10 @@ function Addposts() {
   return (
     <div className="flex p-4 gap-40 justify-center">
       <div className="w-4/12">
-        <NavLink to="/blog" className="text-blue-600 flex ml-24 mb-12">
+        <NavLink
+          to="/projectBlog/blog"
+          className="text-blue-600 flex ml-24 mb-12"
+        >
           ← Blog
         </NavLink>
         <h1 className="flex ml-24 text-3xl font-bold mb-6">New post</h1>
