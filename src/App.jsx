@@ -23,17 +23,17 @@ import Addposts from "./pages/sub-pages/Addposts";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route path="/" element={<About />} />
-      <Route path="blog" element={<Blog />}>
-        <Route index="allposts" element={<Allposts />} />
-        <Route path="favorites" element={<Favorites />} />
-        <Route path="addposts" element={<Addposts />} />
+    <Route path="/projectBlog/" element={<RootLayout />}>
+      <Route path="/projectBlog/" element={<About />} />
+      <Route path="/projectBlog/blog" element={<Blog />}>
+        <Route index="/projectBlog/blog/allposts" element={<Allposts />} />
+        <Route path="/projectBlog/blog/favorites" element={<Favorites />} />
+        <Route path="/projectBlog/blog/addposts" element={<Addposts />} />
       </Route>
 
-      <Route path="reviews" element={<Reviews />} />
-      <Route path="signup" element={<SignUp />} />
-      <Route path="login" element={<LogIn />} />
+      <Route path="/projectBlog/reviews" element={<Reviews />} />
+      <Route path="/projectBlog/signup" element={<SignUp />} />
+      <Route path="/projectBlog/login" element={<LogIn />} />
     </Route>
   )
 );
