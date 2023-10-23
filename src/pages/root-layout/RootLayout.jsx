@@ -11,21 +11,21 @@ function RootLayout() {
       >
         <h1 className="text-2xl font-bold">Logo</h1>
         <nav className="flex gap-14 items-center">
-          <NavLink to="blog" className="linkHover">
+          <NavLink to="/projectBlog/blog" className="linkHover">
             Blog
           </NavLink>
           <NavLink to="/projectBlog" className="linkHover">
             About us
           </NavLink>
-          <NavLink to="reviews" className="linkHover">
+          <NavLink to="/projectBlog/reviews" className="linkHover">
             Reviews
           </NavLink>
           <div className="flex gap-6 items-center">
-            <NavLink to="signup" className="linkHover">
+            <NavLink to="/projectBlog/signup" className="linkHover">
               Sign up
             </NavLink>
             <NavLink
-              to="login"
+              to="/projectBlog/login"
               className="border rounded-full py-1 px-3 linkHover"
             >
               Log in

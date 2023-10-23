@@ -25,15 +25,15 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/projectBlog" element={<RootLayout />}>
       <Route index element={<About />} />
-      <Route path="/projectBlog/blog" element={<Blog />}>
-        <Route index="/projectBlog/blog/allposts" element={<Allposts />} />
-        <Route path="/projectBlog/blog/favorites" element={<Favorites />} />
-        <Route path="/projectBlog/blog/addposts" element={<Addposts />} />
+      <Route path="blog" element={<Blog />}>
+        <Route index="allposts" element={<Allposts />} />
+        <Route path="favorites" element={<Favorites />} />
+        <Route path="addposts" element={<Addposts />} />
       </Route>
 
-      <Route path="/projectBlog/reviews" element={<Reviews />} />
-      <Route path="/projectBlog/signup" element={<SignUp />} />
-      <Route path="/projectBlog/login" element={<LogIn />} />
+      <Route path="reviews" element={<Reviews />} />
+      <Route path="signup" element={<SignUp />} />
+      <Route path="login" element={<LogIn />} />
     </Route>
   )
 );
