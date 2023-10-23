@@ -14,7 +14,7 @@ function RootLayout() {
           <NavLink to="/projectBlog/blog" className="linkHover">
             Blog
           </NavLink>
-          <NavLink to="/projectBlog" className="linkHover">
+          <NavLink to="/projectBlog" className="linkHover" exact>
             About us
           </NavLink>
           <NavLink to="/projectBlog/reviews" className="linkHover">
