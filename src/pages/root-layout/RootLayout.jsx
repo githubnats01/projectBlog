@@ -3,6 +3,12 @@ import { NavLink, Outlet } from "react-router-dom";
 import "../../index.css";
 
 function RootLayout() {
+  const activeLink = ({ isActive }) => {
+    return {
+      color: isActive ? "rgb(220, 241, 13)" : "white",
+      borderBottom: isActive ? "3px solid rgb(246, 228, 67)" : "none",
+    };
+  };
   return (
     <div>
       <header
@@ -11,22 +17,40 @@ function RootLayout() {
       >
         <h1 className="text-2xl font-bold">Logo</h1>
         <nav className="flex gap-14 items-center">
-          <NavLink to="/projectBlog/blog" className="linkHover">
+          <NavLink
+            to="/projectBlog/blog"
+            className="linkHover"
+            activeClassName={activeLink}
+          >
             Blog
           </NavLink>
-          <NavLink to="/projectBlog" className="linkHover" exact>
+          <NavLink
+            to="/projectBlog"
+            className="linkHover"
+            exact
+            activeClassName={activeLink}
+          >
             About us
           </NavLink>
-          <NavLink to="/projectBlog/reviews" className="linkHover">
+          <NavLink
+            to="/projectBlog/reviews"
+            className="linkHover"
+            activeClassName={activeLink}
+          >
             Reviews
           </NavLink>
           <div className="flex gap-6 items-center">
-            <NavLink to="/projectBlog/signup" className="linkHover">
+            <NavLink
+              to="/projectBlog/signup"
+              className="linkHover"
+              activeClassName={activeLink}
+            >
               Sign up
             </NavLink>
             <NavLink
               to="/projectBlog/login"
               className="border rounded-full py-1 px-3 linkHover"
+              activeClassName={activeLink}
             >
               Log in
             </NavLink>
