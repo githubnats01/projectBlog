@@ -30,9 +30,7 @@ function LogIn() {
             value="remember-me"
             id="flexCheckDefault"
           />
-          <label className="form-check-label" for="flexCheckDefault">
-            Remember me
-          </label>
+          <label className="form-check-label">Remember me</label>
         </div>
         <button
           className="btn btn-primary w-100 py-2 border-2 rounded-full"

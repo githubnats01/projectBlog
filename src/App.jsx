@@ -23,10 +23,10 @@ import Addposts from "./pages/sub-pages/Addposts";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/projectBlog" element={<RootLayout />}>
+    <Route path="projectBlog" element={<RootLayout />}>
       <Route index element={<About />} />
       <Route path="blog" element={<Blog />}>
-        <Route index="allposts" element={<Allposts />} />
+        <Route index element={<Allposts />} />
         <Route path="favorites" element={<Favorites />} />
         <Route path="addposts" element={<Addposts />} />
       </Route>

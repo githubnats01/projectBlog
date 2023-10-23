@@ -34,11 +34,11 @@ body {
 .linkHover:hover {
   color: rgb(220, 241, 13);
 }
+
 .linkHover.active {
   color: rgb(220, 241, 13);
   border-bottom: 3px solid rgb(246, 228, 67);
 }
-
 /* .title {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
