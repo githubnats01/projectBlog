@@ -7,20 +7,20 @@ function Blog() {
       <div className="px-20 mb-10 mt-36 flex justify-between">
         <div className="flex gap-8">
           <NavLink
-            index="allposts"
+            index="/projectBlog/blog/allposts"
             className="border-gray-700 border-2 px-4 rounded-full blogLink"
           >
             All Posts
           </NavLink>
           <NavLink
-            to="favorites"
+            to="/projectBlog/blog/favorites"
             className="border-gray-700 border-2 px-4 rounded-full blogLink"
           >
             Liked Blogs
           </NavLink>
         </div>
         <NavLink
-          to="addposts"
+          to="/projectBlog/blog/addposts"
           className="border-gray-700 border-2 px-4 rounded-full blogLink"
         >
           Add post +
